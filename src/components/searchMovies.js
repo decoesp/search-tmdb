@@ -2,9 +2,8 @@ import React, {useState} from "react";
 import MovieCard from './movieCard.js';
 export default function SearchMovies(){
     
-    //states- input query, movies
     const [query, setQuery] = useState('');
-    //create the state for movies, and update that state appropriate
+
     const [movies, setMovies] = useState([]);
     
     const searchMovies = async (e) => {
